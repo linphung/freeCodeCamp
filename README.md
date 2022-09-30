@@ -5,4 +5,5 @@ If you're reading this, that means you've reached my learning repository! Here, 
 ### My Resources
 ---
 * [freeCodeCamp](https://www.freecodecamp.org/)
+* [Full Stack Open](https://fullstackopen.com/)
 * [The Odin Project](https://www.theodinproject.com/)
