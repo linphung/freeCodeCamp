@@ -1,1 +1,1 @@
-This folder consists of class material.
+Class work.
