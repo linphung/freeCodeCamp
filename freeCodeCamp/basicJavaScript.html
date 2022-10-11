@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset='UTF-8'>
+<title>My Basic JavaScript Notes</title>
+
+  <body>
+    <div class=''>
+      <h3>var vs let</h3>
+      <p><strong>var</strong> declares variables globally and are hoisted eg. undefined error if variable is used before declaration</p>
+      <p><strong>let</strong> declares variables that are limited to the block statement and are not hoisted eg. ReferenceError if variable is used before declaration</p>
+      <p>note: variables declared by <strong>let</strong> cannot be redeclared</p>
+    </div>
+    <div class=''>
+      <h3>functions</h3>
+      <p><strong>functions</strong> can be declared by the simple skeleton</p>
+      <code>function foo() {
+        }
+      </code>
+      <p>parameters need not to be declared first before using, for example</p>
+      <code>function foo(param) {
+        }
+      </code>
+      <p>multiple parameters can even be assigned as such</p>
+      <code>function foo(param1, param2) {
+        }
+      </code>
+    </div>
+    <div>
+      <h3>Printing</h3>
+      <p>Depending on what language you're used to, you might expect to use the term "print" for printing out results. This is not the case in JavaScript. We use <strong>console.log()</strong> to do so.</p>
+      <code>function foo(param) {
+        console.log(param);
+        }
+      </code>
+  </body>
+
+</html>
