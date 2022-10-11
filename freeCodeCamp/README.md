@@ -1,5 +1,5 @@
 ## This is my journey through freecodeCamp's Lessons
-----
+
 - [ ] Responsive Web Design Certification
 - [ ] JavaScript Algorithms and Data Structures Certification
   * - [ ] Basic JavaScript
