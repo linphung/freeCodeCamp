@@ -108,6 +108,112 @@
           const shirtValue = testObj.shirt;
           const shirtValue = testObj['shirt'];
        </code>
+       <p>Renaming using dot or bracket notation</p>
+       <code>
+          const myDog = {
+            "name": "Coder",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["freeCodeCamp Campers"]
+          };
+         
+         myDog.name = 'Happy Coder';
+         myDog['name'] = 'Unhappy Coder';
+       </code>
+       <p>Adding properties to your object</p>
+       <code>
+         const myDog = {
+            "name": "Coder",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["freeCodeCamp Campers"]
+          };
+         
+         myDog.bark = 'first bark';
+         myDog['bark'] = 'second bark';
+       </code>
+       <p>Deleting properties is pretty simple too.</p>
+       <code>
+         const myDog = {
+            "name": "Coder",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["freeCodeCamp Campers"]
+          };
+         
+         delete myDog.tails;
+       </code>
+       <p>We can also use this as a lookup table.</p>
+       <code>
+         function phoneticLookup(val) {
+          var result = "";
+          var lookup = {
+            "alpha": "Adams",
+            "bravo": "Boston",
+            "charlie": "Chicago",
+            "delta": "Denver",
+            "echo": "Easy",
+            "foxtrot": "Frank"
+          };
+          result = lookup[val];
+
+          return result;
+        }
+       </code>
+       <p>When looking for properties in objects, we must use bracket notation so that it looks at the value of the property itself.</p>
+       <code>
+         function checkObj(obj, checkProp) {
+            // Only change code below this line
+            if (obj.hasOwnProperty(checkProp)) {
+              return obj[checkProp];
+            }
+            else {
+              return 'Not Found';
+            }
+            // Only change code above this line
+          }
+       </code>
+      </div>
+      <div>
+        <h3>Nesting objects into arrays</h3>
+        <p>Now that we know about objects, we can store multiple objects into arrays.</p>
+       <code>
+         const myMusic = [
+            {
+              "artist": "Billy Joel",
+              "title": "Piano Man",
+              "release_year": 1973,
+              "formats": [
+                "CD",
+                "8T",
+                "LP"
+              ],
+              "gold": true
+            },
+            {
+              "artist" : "bad bunny",
+              "title" : "soy peor",
+              release_year : 2019,
+              formats : ['CD', 'vinyl', 'digital']
+            }
+          ];
+       </code>
+        <p>To access some nested information, we can use dot notation or bracket notation, or a mix of both</p>
+        <code>
+          const myStorage = {
+            "car": {
+              "inside": {
+                "glove box": "maps",
+                "passenger seat": "crumbs"
+               },
+              "outside": {
+                "trunk": "jack"
+              }
+            }
+          };
+
+          const gloveBoxContents = myStorage.car.inside["glove box"];
+        </code>
       </div>
   </body>
 
